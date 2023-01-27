@@ -1,0 +1,104 @@
+<html >
+    <head>
+        <link rel="stylesheet" href="calculator.css">
+        <title>Calculator</title>
+
+        <script>
+
+            function print(val)
+            {
+                var str = document.getElementById("switch1").innerHTML;
+                document.getElementById("calculator").value += val;
+            }
+
+            function solve()
+            {
+                let str = document.getElementById("calculator").value;
+                let ans = eval(str);
+                document.getElementById("calculator").value = ans;
+            }
+
+            function sqrt()
+            {
+                let str = document.getElementById("calculator").value;
+                let ans = Math.sqrt(Number(str));
+                document.getElementById("calculator").value = ans;
+            }
+
+
+            function delet()
+            {
+                let str = document.getElementById("calculator").value;
+                document.getElementById("calculator").value = str.substr(0,str.length - 1);
+            }
+
+            function round()
+            {
+                let str = document.getElementById("calculator").value;
+                document.getElementById("calculator").value = Math.round(str);
+            }
+
+
+        </script>
+
+    </head>
+    <body>
+        
+        <form>
+
+            <div class="calci">
+
+                <table id="cal"> 
+                    <tr id="text">
+                        <td colspan="4"><input type="text" id="calculator" placeholder="0"></td>
+                    </tr>
+        
+                    <tr id="operator">
+                        <td><button type="reset" id="switch2">C</button></td>
+                        <td><button type="button" id="switch2" onclick="delet()">&larr;</button></td>
+                        <td><button type="button" id="switch2" onclick="print('%')">%</button></td>
+                        <td><button type="button" id="switch3" onclick="print('/')">/</button></td>
+                    </tr>
+        
+                    <tr>
+                        <td><button type="button" id="switch1" onclick="print('**')">^</button></td>
+                        <td><button type="button" id="switch1" onclick="sqrt()">sqrt</button></td>
+                        <td><button type="button" id="switch1" onclick="print('*')">x</button></td>
+                        <td><button type="button" id="switch3" onclick="print('-')">-</button></td>
+                    </tr>
+        
+                    <tr>
+                        <td><button type="button" id="switch1" onclick="print('7')">7</button></td>
+                        <td><button type="button" id="switch1" onclick="print('8')">8</button></td>
+                        <td><button type="button" id="switch1" onclick="print('9')">9</button></td>
+                        <td><button type="button" id="switch3" onclick="print('+')">+</button></td>
+                    </tr>
+        
+                    <tr>
+                        <td><button type="button" id="switch1" onclick="print('4')">4</button></td>
+                        <td><button type="button" id="switch1" onclick="print('5')">5</button></td>
+                        <td><button type="button" id="switch1" onclick="print('6')">6</button></td>
+                        <td><button type="button" id="switch3" onclick="round()">round</button></td>
+                    </tr>
+        
+                    <tr>
+                        <td><button type="button" id="switch1" onclick="print('1')">1</button></td>
+                        <td><button type="button" id="switch1" onclick="print('2')">2</button></td>
+                        <td><button type="button" id="switch1" onclick="print('3')">3</button></td>
+                        <td><button type="button" id="switch3" onclick="print('1/')">1/x</button></td>
+                    </tr>
+        
+                    <tr>
+                        <td colspan="2"><button type="button" id="switch4" onclick="print('0')">0</button></td>
+                        <td><button type="button" id="switch1" onclick="print('.')">.</button></td>
+                        <td><button type="button" id="switch3" onclick="solve()">=</button></td>
+                    </tr>
+        
+                </table>
+    
+            </div>
+
+        </form>
+
+    </body>
+</html>

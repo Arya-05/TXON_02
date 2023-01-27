@@ -1,0 +1,105 @@
+.calci
+{
+    background-color: #363535;
+    height: 430px;
+    width: 340px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 5%;
+}
+
+#cal
+{
+    height: 390px;
+    width: 300px;
+}
+
+#text
+{
+    height: 55px;
+    width: 300px;
+}
+
+#calculator
+{
+    height: 55px;
+    width: 330px;
+    text-align: right;
+    border: 0;
+    font-size: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #e8e6d6;
+    color: rgb(3, 3, 3);
+    padding-top: 20px;
+    margin-bottom: 30px;
+    border-color: black;
+    border-width: 2px;
+
+}
+
+#operator
+{
+    height: 45px;
+    width: 300px;
+    margin-top: 30px;
+
+}
+
+#switch1
+{
+    height: 50px;
+    width: 80px;
+    border-radius: 2%;
+    border: 0;
+    background-color:#b9dad3;
+    color: rgb(10, 10, 10);
+    font-size: 20px;
+}
+#switch1:hover{
+    background-color: #c5cfcd;
+}
+
+#switch2
+{
+    height: 50px;
+    width: 80px;
+    border-radius: 2%;
+    border: 0;
+    background-color:#f2f2f2;
+    font-size: 20px;
+}
+#switch2:hover{
+    background-color: #c5cfcd;
+}
+
+#switch3
+{
+    height: 50px;
+    width: 80px;
+    border-radius: 2%;
+    border: 0;
+    background-color:  #95afce;
+    color: rgb(2, 2, 2);
+    font-size: 20px;
+}
+#switch3:hover{
+    background-color: #8fbbd7;
+}
+
+#switch4
+{
+    height: 50px;
+    width: 165px;
+    border-radius: 2%;
+    border: 0;
+    background-color:#d7c9ec;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+#switch4:hover{
+    background-color: #debde1;
+}
